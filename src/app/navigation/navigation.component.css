@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    background-color: black;
+}
+li {
+    display: inline-block;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: green;
+    color: black;
+}
+
+a.active {
+    background-color: #4caf50;
+    color: white;
+}
+li .right {
+    float: right;
+}
+.router-link-active {
+    background-color: #4caf50;
+    color: white;
+}

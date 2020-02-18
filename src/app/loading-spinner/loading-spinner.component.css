@@ -18,7 +18,7 @@
     width: 6px;
     height: 18px;
     border-radius: 20%;
-    background: #fff;
+    background: blue;
 }
 .lds-spinner div:nth-child(1) {
     transform: rotate(0deg);
@@ -75,4 +75,35 @@
     100% {
         opacity: 0;
     }
+}
+.overlay {
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.overlay-content {
+    position: fixed;
+    z-index: 999999;
+    top: 50%;
+    left: 50%;
+    /* background-color: white; */
+    /* border: 1px solid rgb(94, 94, 94); */
+    /* -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+
+    cursor: pointer;
+    padding: 5;
+    width: 285px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    /* -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s; */
 }

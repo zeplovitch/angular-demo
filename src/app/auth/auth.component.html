@@ -1,0 +1,27 @@
+<div class="main">
+    <div class="loginTitle">Login</div>
+    <form (ngSubmit)="save()" [formGroup]="loginForm" class="login-form ">
+        <label for="email">Email</label>
+        <input
+            id="email"
+            type="email"
+            placeholder="Email"
+            formControlName="email"
+            required
+            email
+        />
+        <label for="password">Password</label>
+        <input
+            type="password"
+            id="password"
+            formControlName="password"
+            minlength="6"
+            required
+        />
+        <input type="checkbox" id="rememberMe" formControlName="rememberMe" />
+        <label for="rememberMe">Remember me</label>
+        <div>
+            <button [disabled]="!loginForm.valid" type="submit">Login</button>
+        </div>
+    </form>
+</div>

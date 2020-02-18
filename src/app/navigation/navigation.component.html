@@ -1,0 +1,38 @@
+<nav>
+    <ul>
+        <li>
+            <a
+                [routerLink]="['/customer']"
+                routerLinkActive="router-link-active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >Customers</a
+            >
+        </li>
+        <li>
+            <a
+                [routerLink]="['/order']"
+                routerLinkActive="router-link-active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >Orders</a
+            >
+        </li>
+        <li>
+            <a
+                [routerLink]="['/contact']"
+                routerLinkActive="router-link-active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >Contact</a
+            >
+        </li>
+        <li>
+            <a [routerLink]="['/about']" routerLinkActive="router-link-active"
+                >About</a
+            >
+        </li>
+        <li class="right">
+            <a [routerLink]="['/login']" routerLinkActive="router-link-active"
+                >Login</a
+            >
+        </li>
+    </ul>
+</nav>
